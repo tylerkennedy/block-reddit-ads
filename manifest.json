@@ -13,17 +13,12 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://*.reddit.com/*"
       ],
       "css": [
         "public/style.css"
       ],
       "run_at": "document_start"
     }
-  ],
-  "permissions": [
-    "tabs"
-  ],
-  "host_permissions": []
+  ]
 }
