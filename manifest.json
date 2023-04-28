@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension Template",  
-  "description": "Chrome Extension Template",  
+  "name": "Reddit Ad Blocker - Hide Promoted Posts",  
+  "description": "Block promoted posts and hide ads on Reddit",  
   "version": "1.0",    
   "action": {
       "default_icon": "public/icon.png",
-      "default_popup": "public/popup.html",
-      "default_title" : "Chrome Extension Template"
+      "default_title" : "Reddit Ad Blocker"
   },
   "icons": {
     "48": "public/icon.png"
@@ -17,8 +16,8 @@
         "http://*/*",
         "https://*/*"
       ],
-      "js": [
-        "public/content_script.js"
+      "css": [
+        "public/style.css"
       ],
       "run_at": "document_start"
     }
